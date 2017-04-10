@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+nav {
+  height: 70px;
+  background-color: black;
+  opacity: .5;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  z-index: 99;
+}
+
+a {
+  text-decoration: none;
+  color: aqua;
+  line-height: 70px;
+  margin-left: 30px;
+}
+
+h1 {
+  text-align: center;
+  color: #0d1111;
+  padding-top: 300px;
+  font-size: 100px;
+  font-family: 'Faster One', cursive;
+  text-shadow: 2px 4px aqua, 2px -2px aqua;
+  letter-spacing: 20px;
+}
+
+h2 {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 45px;
+  text-shadow: 1px 2px 30px #dee2e1;
+}
+
+.section {
+  height: 100%;
+  background-attachment: fixed;
+}
+
+.sectOne {
+  background-image: url('sectOne.jpg');
+}
+
+.sectTwo {
+  background-image: url('https://www.walldevil.com/wallpapers/w03/869335-animals-black-cat-blue-eyes-cats-dark-photo-manipulation.jpg');
+  height: 50%;
+}
+
+.sectThree {
+ background-image: url('http://www.wickedsa.com/i/2017/02/black-texture-wallpapers-background.jpg');
+}
+
+#felineDiv {
+  height: 600px;
+  background-color: aqua;
+  display: flex;
+  justify-content: space-around;
+}
+
+.photo {
+  height: 400px;
+  width: 400px;
+  margin-top: 100px;
+  box-shadow: 0px 1px black;
+  position: relative;
+  overflow: hidden;
+}
+
+.cat {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  /*position: relative;*/
+  transition: all .7s ease;
+}
+
+h3 {
+  position: absolute;
+  top: 100px;
+  color: white;
+  text-align: center;
+  font-size: 70px;
+  width: 100%;
+  opacity: 0;
+}
+
+p {
+  position: absolute;
+  top: 250px;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  opacity: 0;
+}
+
+.photo:hover .cat {
+  transform: scale(1.1);
+  filter: blur(5px) brightness(20%);
+}
+
+.photo:hover h3 {
+  opacity: 1;
+  transition: 2s ease;
+}
+
+.photo:hover p {
+  opacity: 1;
+  transition: 2s ease;
+}
+
+#wine {
+  height: 700px;
+  display: block;
+  margin: auto;
+  padding-top: 50px;
+}
+
+#footer {
+  height: 50px;
+  background-color: aqua;
+}
+
+#footerText {
+  display: block;
+  color: black;
+  text-align: center;
+  line-height: 50px;
+  font-size: 14px;
+  font-family: verdana;
+}
